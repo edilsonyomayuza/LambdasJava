@@ -10,5 +10,6 @@ public class ParameterStoreDto {
     String region;
     String arnSecre;
     String tabla;
+    String urlConnection;
 
 }
