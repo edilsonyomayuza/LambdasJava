@@ -16,6 +16,22 @@ public class UsuarioEntity {
     @DynamoDBHashKey(attributeName = "sdk")
     protected String sdk;
 
+    @DynamoDBAttribute(attributeName = "persona")
+    protected PersonaEntity persona;
+
+    @DynamoDBAttribute(attributeName = "llave")
+    protected LlaveEntity llave;
+
+    @DynamoDBAttribute(attributeName = "identificacion")
+    protected IdentificacionEntity identificacion;
+
+    /**
+    @DynamoDBRangeKey(attributeName = "id")
+    protected String id;
+
+    @DynamoDBHashKey(attributeName = "sdk")
+    protected String sdk;
+
     @DynamoDBAttribute(attributeName = "name")
     protected String nombre;
 
@@ -36,6 +52,8 @@ public class UsuarioEntity {
 
     @DynamoDBAttribute(attributeName = "ubicacion")
     protected UbicacionEntity ubicacion;
+
+    **/
 
 
 }

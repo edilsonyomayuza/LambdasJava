@@ -18,7 +18,7 @@ public class DynamoService  implements IDynamoService{
     }
     @Override
     public UsuarioEntity getUsuario(DynamoDBMapper mapper, Usuario usuario){
-        String id = usuario.getTipoDocumento()+"-"+usuario.getNumeroDocumento();
+        String id = usuario.getTipI() + "_" + usuario.getNumero();
         UsuarioEntity response = repository.load(mapper, id);
         return response;
     }
